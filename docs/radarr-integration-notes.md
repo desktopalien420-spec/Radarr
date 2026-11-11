@@ -85,3 +85,15 @@ Will create:
 - Plutonium auth adapter
 - Plutonium theme/CSS overrides
 - Documentation for env vars and setup
+
+## Phase 2: Implementation (in progress)
+
+Created Plutonium integration structure:
+- `plutonium/manifest/radarr.app.json` - App manifest with window settings
+- `plutonium/registry/appRegistry.js` - App registration
+- `plutonium/auth/plutoniumAuthAdapter.js` - Auth/session integration
+- `plutonium/theme/plutonium-theme.css` - Design tokens and styles
+- `plutonium/adapters/apiAdapter.js` - API communication adapter
+- `plutonium/components/PlutoniumAppWrapper.jsx` - App wrapper component
+- `plutonium/icons/` - App icons
+- `.env.example` - Environment variables documentation

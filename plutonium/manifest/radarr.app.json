@@ -1,0 +1,24 @@
+{
+  "id": "com.plutonium.radarr",
+  "name": "Radarr",
+  "version": "1.0.0",
+  "description": "Movie collection manager for Usenet and BitTorrent users",
+  "icon": "./icons/radarr.svg",
+  "category": "media",
+  "type": "webapp",
+  "entryPoint": {
+    "url": "/",
+    "window": {
+      "defaultWidth": 1200,
+      "defaultHeight": 800,
+      "minWidth": 900,
+      "minHeight": 600,
+      "resizable": true,
+      "maximizable": true,
+      "minimizable": true,
+      "closable": true
+    }
+  },
+  "permissions": ["network", "storage"],
+  "author": "Radarr Team"
+}

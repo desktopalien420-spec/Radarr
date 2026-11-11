@@ -1,0 +1,140 @@
+/**
+ * Plutonium Cloud Design System Theme for Radarr
+ * Replaces Radarr styling with Plutonium design tokens
+ */
+
+:root {
+  /* Plutonium Design Tokens - Dark Theme (Primary) */
+  --plutonium-bg-primary: #0f1117;
+  --plutonium-bg-secondary: #161b22;
+  --plutonium-bg-tertiary: #21262d;
+  --plutonium-bg-elevated: #1c2128;
+  
+  --plutonium-surface: #161b22;
+  --plutonium-surface-hover: #1c2128;
+  --plutonium-surface-active: #21262d;
+  
+  --plutonium-border: #30363d;
+  --plutonium-border-muted: #21262d;
+  
+  --plutonium-text-primary: #e6edf3;
+  --plutonium-text-secondary: #8b949e;
+  --plutonium-text-muted: #6e7681;
+  
+  --plutonium-accent: #58a6ff;
+  --plutonium-accent-hover: #79c0ff;
+  --plutonium-accent-active: #388bfd;
+  
+  --plutonium-success: #3fb950;
+  --plutonium-warning: #d29922;
+  --plutonium-danger: #f85149;
+  
+  --plutonium-shadow-sm: 0 1px 2px 0 rgba(0, 0, 0, 0.3);
+  --plutonium-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.4), 0 2px 4px -2px rgba(0, 0, 0, 0.4);
+  --plutonium-shadow-lg: 0 20px 25px -5px rgba(0, 0, 0, 0.5), 0 8px 10px -6px rgba(0, 0, 0, 0.5);
+  
+  --plutonium-radius-sm: 4px;
+  --plutonium-radius: 6px;
+  --plutonium-radius-md: 8px;
+  --plutonium-radius-lg: 12px;
+  
+  --plutonium-spacing-xs: 4px;
+  --plutonium-spacing-sm: 8px;
+  --plutonium-spacing-md: 12px;
+  --plutonium-spacing-lg: 16px;
+  --plutonium-spacing-xl: 24px;
+  --plutonium-spacing-2xl: 32px;
+  
+  --plutonium-font-sans: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Noto Sans', Helvetica, Arial, sans-serif;
+  --plutonium-font-mono: 'SF Mono', Monaco, 'Cascadia Code', 'Roboto Mono', Consolas, monospace;
+}
+
+/* Apply Plutonium theme to Radarr */
+body {
+  background-color: var(--plutonium-bg-primary) !important;
+  color: var(--plutonium-text-primary) !important;
+  font-family: var(--plutonium-font-sans) !important;
+}
+
+/* Window chrome integration */
+.plutonium-window {
+  background: var(--plutonium-bg-primary);
+  border-radius: var(--plutonium-radius-lg);
+  overflow: hidden;
+  box-shadow: var(--plutonium-shadow-lg);
+}
+
+/* Override Radarr styles with Plutonium tokens */
+.PageContent-content {
+  background-color: var(--plutonium-bg-primary) !important;
+}
+
+.PageHeader-header {
+  background-color: var(--plutonium-bg-secondary) !important;
+  border-bottom: 1px solid var(--plutonium-border) !important;
+}
+
+.Sidebar-menuItem {
+  color: var(--plutonium-text-secondary) !important;
+}
+
+.Sidebar-menuItem-isActive {
+  background-color: var(--plutonium-surface-active) !important;
+  color: var(--plutonium-text-primary) !important;
+}
+
+.Button-button {
+  background-color: var(--plutonium-surface) !important;
+  border: 1px solid var(--plutonium-border) !important;
+  color: var(--plutonium-text-primary) !important;
+  border-radius: var(--plutonium-radius) !important;
+  transition: all 0.15s ease !important;
+}
+
+.Button-button:hover {
+  background-color: var(--plutonium-surface-hover) !important;
+  border-color: var(--plutonium-accent) !important;
+}
+
+.Button-primary {
+  background-color: var(--plutonium-accent) !important;
+  border-color: var(--plutonium-accent) !important;
+  color: #ffffff !important;
+}
+
+.Button-primary:hover {
+  background-color: var(--plutonium-accent-hover) !important;
+}
+
+.Card-card {
+  background-color: var(--plutonium-surface) !important;
+  border: 1px solid var(--plutonium-border) !important;
+  border-radius: var(--plutonium-radius-md) !important;
+  box-shadow: var(--plutonium-shadow) !important;
+}
+
+input, select, textarea {
+  background-color: var(--plutonium-bg-secondary) !important;
+  border: 1px solid var(--plutonium-border) !important;
+  color: var(--plutonium-text-primary) !important;
+  border-radius: var(--plutonium-radius) !important;
+}
+
+input:focus, select:focus, textarea:focus {
+  outline: 2px solid var(--plutonium-accent) !important;
+  outline-offset: 2px !important;
+  border-color: var(--plutonium-accent) !important;
+}
+
+/* Table styling */
+.Table-table {
+  background-color: var(--plutonium-surface) !important;
+}
+
+.TableRow-row {
+  border-bottom: 1px solid var(--plutonium-border-muted) !important;
+}
+
+.TableRow-row:hover {
+  background-color: var(--plutonium-surface-hover) !important;
+}
