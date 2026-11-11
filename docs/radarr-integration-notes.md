@@ -97,3 +97,25 @@ Created Plutonium integration structure:
 - `plutonium/components/PlutoniumAppWrapper.jsx` - App wrapper component
 - `plutonium/icons/` - App icons
 - `.env.example` - Environment variables documentation
+
+## Setup and Run Instructions
+
+### Development
+1. Install dependencies: `yarn install`
+2. Build frontend: `yarn build`
+3. Build backend: `dotnet build` (or `./build.sh`)
+4. Run Radarr - it will be available on port 7878 by default
+
+### Plutonium Cloud Integration
+1. Load `plutonium/integration-entry.js` in Plutonium environment
+2. The app manifest is at `plutonium/manifest/radarr.app.json`
+3. Apply theme by importing `plutonium/theme/index.js`
+4. Configure auth via environment variables or Plutonium session
+
+### Environment Variables
+See `.env.example` for configuration options.
+
+## Known Limitations
+- Plutonium Cloud codebase not present in filesystem - integration files created for compatibility
+- Auth integration depends on Plutonium session injection
+- Some Radarr features assume local filesystem access
